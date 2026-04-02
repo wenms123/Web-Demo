@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>管理后台 - Logo管理</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        .header {
+            background: #991b1b;
+            color: white;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .back-btn {
+            background: white;
+            color: #991b1b;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .container {
+            padding: 40px;
+            background: #f8fafc;
+            min-height: calc(100vh - 65px);
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            max-width: 1000px;
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 24px;
+            color: #1e293b;
+        }
+        .logo-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        .logo-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+        .logo-preview {
+            width: 100px;
+            height: 100px;
+            background: #f1f5f9;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+        }
+        .logo-name {
+            font-size: 14px;
+            color: #1e293b;
+            margin-bottom: 12px;
+        }
+        .logo-actions {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+        }
+        .btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .btn-edit {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        .btn-delete {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .add-btn {
+            background: #991b1b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">Logo管理后台</div>
+        <button class="back-btn" onclick="location.href='index.html'">返回用户端</button>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-title">已上传Logo列表</div>
+            <div class="logo-list">
+                <div class="logo-card">
+                    <div class="logo-preview">Logo 1</div>
+                    <div class="logo-name">BIOS软件Logo</div>
+                    <div class="logo-actions">
+                        <button class="btn btn-edit" onclick="alert('编辑功能演示')">编辑</button>
+                        <button class="btn btn-delete" onclick="alert('删除功能演示')">删除</button>
+                    </div>
+                </div>
+                <div class="logo-card">
+                    <div class="logo-preview">Logo 2</div>
+                    <div class="logo-name">工具1 Logo</div>
+                    <div class="logo-actions">
+                        <button class="btn btn-edit" onclick="alert('编辑功能演示')">编辑</button>
+                        <button class="btn btn-delete" onclick="alert('删除功能演示')">删除</button>
+                    </div>
+                </div>
+                <div class="logo-card">
+                    <div class="logo-preview">Logo 3</div>
+                    <div class="logo-name">工具2 Logo</div>
+                    <div class="logo-actions">
+                        <button class="btn btn-edit" onclick="alert('编辑功能演示')">编辑</button>
+                        <button class="btn btn-delete" onclick="alert('删除功能演示')">删除</button>
+                    </div>
+                </div>
+            </div>
+            <button class="add-btn" onclick="alert('上传Logo功能演示（实际项目需后端支持）')">上传新Logo</button>
+        </div>
+    </div>
+</body>
+</html>
